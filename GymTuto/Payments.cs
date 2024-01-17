@@ -21,5 +21,20 @@ namespace GymTuto
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
