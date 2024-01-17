@@ -24,7 +24,7 @@ namespace GymTuto
 
         private void label3_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -87,6 +87,13 @@ namespace GymTuto
             PhoneTb.Text = "";
             GenderCb.Text = "";
             TimeCb.Text = "";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            log.Show();
+            this.Hide();
         }
     }
 }

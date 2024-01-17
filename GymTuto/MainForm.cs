@@ -24,7 +24,9 @@ namespace GymTuto
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            AddMember addMember = new AddMember();
+            addMember.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)

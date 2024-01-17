@@ -16,7 +16,7 @@ namespace GymTuto
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddMember());
+            Application.Run(new ViewMembers());
         }
     }
 }
