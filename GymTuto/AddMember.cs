@@ -63,6 +63,12 @@ namespace GymTuto
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Member Successfully Added");
                     Con.Close();
+                    AmountTb.Text = "";
+                    AgeTb.Text = "";
+                    NameTb.Text = "";
+                    PhoneTb.Text = "";
+                    GenderCb.Text = "";
+                    TimeCb.Text = "";
 
                 }
                 catch(Exception ex)
@@ -71,6 +77,16 @@ namespace GymTuto
                 }
 
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AmountTb.Text = "";
+            AgeTb.Text = "";
+            NameTb.Text = "";
+            PhoneTb.Text = "";
+            GenderCb.Text = "";
+            TimeCb.Text = "";
         }
     }
 }
