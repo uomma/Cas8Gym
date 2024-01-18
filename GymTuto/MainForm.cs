@@ -21,7 +21,7 @@ namespace GymTuto
         {
 
         }
-
+        //ADD BUTTON
         private void button1_Click(object sender, EventArgs e)
         {
             AddMember addMember = new AddMember();
@@ -38,28 +38,28 @@ namespace GymTuto
         {
 
         }
-
+        //UPDATE/DELETE BUTTON
         private void button2_Click(object sender, EventArgs e)
         {
             UpdateDelete update = new UpdateDelete();
             update.Show();
             this.Hide();
         }
-
+        //PAYMENTS BUTTON
         private void button4_Click(object sender, EventArgs e)
         {
             Payments pay = new Payments();
             pay.Show();
             this.Hide();
         }
-
+        //VIEW BUTTON
         private void button3_Click_1(object sender, EventArgs e)
         {
             ViewMembers viewMembers = new ViewMembers();
             viewMembers.Show();
             this.Hide();    
         }
-
+        //DOG PIC
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Login log = new Login();

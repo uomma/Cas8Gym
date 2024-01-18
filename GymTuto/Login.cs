@@ -16,7 +16,7 @@ namespace GymTuto
         {
             InitializeComponent();
         }
-
+        //RESET BUTTON
         private void button1_Click(object sender, EventArgs e)
         {
             UidTb.Text = "";
@@ -37,7 +37,7 @@ namespace GymTuto
         {
 
         }
-
+        //LOGIN BUTTON
         private void button2_Click(object sender, EventArgs e)
         {
             if (UidTb.Text == "" || PwTb.Text == "")

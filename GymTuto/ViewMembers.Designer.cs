@@ -142,6 +142,7 @@
             this.label4.Size = new System.Drawing.Size(75, 83);
             this.label4.TabIndex = 53;
             this.label4.Text = "X";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -225,6 +226,7 @@
             this.MemberSDGV.ThemeStyle.RowsStyle.Height = 20;
             this.MemberSDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.Orange;
             this.MemberSDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.MemberSDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MemberSDGV_CellContentClick);
             // 
             // label12
             // 

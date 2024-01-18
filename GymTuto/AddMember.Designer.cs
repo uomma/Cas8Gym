@@ -134,10 +134,10 @@
             this.TimeCb.FormattingEnabled = true;
             this.TimeCb.ItemHeight = 15;
             this.TimeCb.Items.AddRange(new object[] {
-            "6:00-8:00",
-            "8:00-10:00",
-            "18:00-20:00",
-            "20:00-22:00"});
+            "3:00-4:00",
+            "4:00-5:00",
+            "7:00-8:00",
+            "8:00-9:00"});
             this.TimeCb.Location = new System.Drawing.Point(485, 412);
             this.TimeCb.Margin = new System.Windows.Forms.Padding(2);
             this.TimeCb.Name = "TimeCb";

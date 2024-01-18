@@ -65,11 +65,12 @@
             this.Periodo.Name = "Periodo";
             this.Periodo.Size = new System.Drawing.Size(151, 20);
             this.Periodo.TabIndex = 51;
+            this.Periodo.ValueChanged += new System.EventHandler(this.Periodo_ValueChanged);
             // 
             // AmountTb
             // 
             this.AmountTb.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.AmountTb.Location = new System.Drawing.Point(288, 426);
+            this.AmountTb.Location = new System.Drawing.Point(288, 332);
             this.AmountTb.Margin = new System.Windows.Forms.Padding(2);
             this.AmountTb.Name = "AmountTb";
             this.AmountTb.Size = new System.Drawing.Size(151, 20);
@@ -131,7 +132,7 @@
             "8:00-10:00",
             "18:00-20:00",
             "20:00-22:00"});
-            this.NameCb.Location = new System.Drawing.Point(288, 333);
+            this.NameCb.Location = new System.Drawing.Point(288, 443);
             this.NameCb.Margin = new System.Windows.Forms.Padding(2);
             this.NameCb.Name = "NameCb";
             this.NameCb.Size = new System.Drawing.Size(139, 21);
@@ -324,6 +325,7 @@
             this.PaymentSDGV.ThemeStyle.RowsStyle.Height = 20;
             this.PaymentSDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.Orange;
             this.PaymentSDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.PaymentSDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PaymentSDGV_CellContentClick);
             // 
             // label2
             // 
@@ -357,7 +359,7 @@
             this.label9.BackColor = System.Drawing.Color.Tan;
             this.label9.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(19, 322);
+            this.label9.Location = new System.Drawing.Point(19, 432);
             this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(228, 32);
@@ -383,7 +385,7 @@
             this.label12.BackColor = System.Drawing.Color.Tan;
             this.label12.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(19, 415);
+            this.label12.Location = new System.Drawing.Point(19, 321);
             this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(130, 32);

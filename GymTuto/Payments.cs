@@ -24,6 +24,7 @@ namespace GymTuto
             populate();
         }
 
+        //PAY BUTTON
         private void button4_Click(object sender, EventArgs e)
         {
             if (NameCb.Text == "" || AmountTb.Text == "")
@@ -76,7 +77,7 @@ namespace GymTuto
             NameCb.DataSource = dt;
             Con.Close();
         }
-        private void filterByName()
+        private void FilterByName()
         {
             Con.Open();
             string query = "select * from PaymentTbl where PMember= '"+SearchName.Text+"'";
@@ -99,12 +100,15 @@ namespace GymTuto
             PaymentSDGV.DataSource = ds.Tables[0];
             Con.Close();
         }
+
+        //RESET BUTTON
         private void button3_Click(object sender, EventArgs e)
         {
-            //NameTb.Text = "";
+            
             AmountTb.Text = "";
         }
 
+        //BACK BUTTON 
         private void button1_Click(object sender, EventArgs e)
         {
             MainForm mainform = new MainForm();
@@ -121,15 +125,16 @@ namespace GymTuto
         {
 
         }
-
+        //REFRESH BUTTON
         private void button5_Click(object sender, EventArgs e)
         {
             populate();
         }
 
+        //SEARCH BUTTON
         private void button2_Click(object sender, EventArgs e)
         {
-            filterByName();
+            FilterByName();
             SearchName.Text = "";
         }
 
@@ -147,10 +152,20 @@ namespace GymTuto
         {
 
         }
-
+        //X BUTTON
         private void label7_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Periodo_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PaymentSDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

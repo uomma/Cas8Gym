@@ -47,10 +47,12 @@ namespace GymTuto
             key = Convert.ToInt32(MemberSDGV.SelectedRows[0].Cells[0].Value.ToString());
             NameTb.Text = MemberSDGV.SelectedRows[0].Cells[1].Value.ToString();
             PhoneTb.Text = MemberSDGV.SelectedRows[0].Cells[2].Value.ToString();
-            AgeTb.Text = MemberSDGV.SelectedRows[0].Cells[4].Value.ToString();
-            AmountTb.Text = MemberSDGV.SelectedRows[0].Cells[6].Value.ToString();
-            TimeCb.Text = MemberSDGV.SelectedRows[0].Cells[5].Value.ToString();
             GenderCb.Text = MemberSDGV.SelectedRows[0].Cells[3].Value.ToString();
+            AmountTb.Text = MemberSDGV.SelectedRows[0].Cells[6].Value.ToString();
+            AgeTb.Text = MemberSDGV.SelectedRows[0].Cells[4].Value.ToString();
+            TimeCb.Text = MemberSDGV.SelectedRows[0].Cells[5].Value.ToString();
+           
+            
 
 
         }

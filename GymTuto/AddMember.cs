@@ -105,7 +105,7 @@ namespace GymTuto
                 try
                 {
                     Con.Open();
-                    String query = "insert into MemberTbl values('" + NameTb.Text + "', '" + PhoneTb.Text + "', '" + GenderCb.SelectedItem.ToString() + "', " + AgeTb.Text + ", '" + TimeCb.SelectedItem.ToString() + "' ,'" + AmountTb.Text + "')";
+                    String query = "insert into MemberTbl values('" + NameTb.Text + "', '" + PhoneTb.Text + "', '" + GenderCb.SelectedItem.ToString() + "', " + AgeTb.Text + ",'" + AmountTb.Text + "', '" + TimeCb.SelectedItem.ToString() + "')";
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Member Successfully Added");
