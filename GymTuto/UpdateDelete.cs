@@ -5,9 +5,11 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace GymTuto
 {
@@ -80,7 +82,7 @@ namespace GymTuto
                 try
                 {
                     Con.Open();
-                    string query = "update MemberTbl set MName = '" + NameTb.Text + "', MPhone= '" + PhoneTb.Text + "',MAge= '" + AgeTb.Text + "', MGen = '" + GenderCb.Text + "',  MAmount = '" + AmountTb.Text + "', MTime='" + TimeCb.Text + "' where MId="+key+"; ";
+                    string query = "update MemberTbl set MName = '" + NameTb.Text + "', MPhone= '" + PhoneTb.Text + "',MAge= '" + AgeTb.Text + "', MGen = '" + GenderCb.Text + "',  MAmount = '" + AmountTb.Text + "', MTime='" + TimeCb.Text + "' where MId=" + key + "; ";
 
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
