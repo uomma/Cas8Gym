@@ -119,6 +119,7 @@
             this.button4.TabIndex = 47;
             this.button4.Text = "BACK";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // button3
             // 
@@ -150,6 +151,7 @@
             this.button2.TabIndex = 45;
             this.button2.Text = "ADD";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // TimeCb
             // 
@@ -335,6 +337,7 @@
             this.button1.TabIndex = 51;
             this.button1.Text = "RESET";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // AddMember
             // 

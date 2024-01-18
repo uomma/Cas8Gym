@@ -50,7 +50,7 @@
             this.label1.BackColor = System.Drawing.Color.Firebrick;
             this.label1.Font = new System.Drawing.Font("Stencil", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.label1.Location = new System.Drawing.Point(598, 33);
+            this.label1.Location = new System.Drawing.Point(827, 67);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(297, 71);
@@ -62,7 +62,7 @@
             // 
             this.UidTb.Font = new System.Drawing.Font("Sans Serif Collection", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UidTb.ForeColor = System.Drawing.Color.Firebrick;
-            this.UidTb.Location = new System.Drawing.Point(567, 126);
+            this.UidTb.Location = new System.Drawing.Point(796, 160);
             this.UidTb.Margin = new System.Windows.Forms.Padding(0);
             this.UidTb.Name = "UidTb";
             this.UidTb.Size = new System.Drawing.Size(319, 74);
@@ -73,7 +73,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(879, 126);
+            this.pictureBox1.Location = new System.Drawing.Point(1108, 160);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(57, 58);
@@ -86,7 +86,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(879, 234);
+            this.pictureBox2.Location = new System.Drawing.Point(1108, 268);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(57, 58);
@@ -99,7 +99,7 @@
             // 
             this.PwTb.Font = new System.Drawing.Font("Sans Serif Collection", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PwTb.ForeColor = System.Drawing.Color.Firebrick;
-            this.PwTb.Location = new System.Drawing.Point(567, 234);
+            this.PwTb.Location = new System.Drawing.Point(796, 268);
             this.PwTb.Margin = new System.Windows.Forms.Padding(0);
             this.PwTb.Name = "PwTb";
             this.PwTb.PasswordChar = '*';
@@ -114,7 +114,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.button1.Location = new System.Drawing.Point(760, 371);
+            this.button1.Location = new System.Drawing.Point(989, 405);
             this.button1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(176, 48);
@@ -131,7 +131,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.button2.Location = new System.Drawing.Point(567, 371);
+            this.button2.Location = new System.Drawing.Point(796, 405);
             this.button2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(176, 48);
@@ -158,7 +158,7 @@
             this.label11.BackColor = System.Drawing.Color.Firebrick;
             this.label11.Font = new System.Drawing.Font("Stencil", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(522, 542);
+            this.label11.Location = new System.Drawing.Point(654, 624);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(550, 33);
@@ -171,7 +171,7 @@
             this.label10.BackColor = System.Drawing.Color.Firebrick;
             this.label10.Font = new System.Drawing.Font("Stencil", 16.2F);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(9, 542);
+            this.label10.Location = new System.Drawing.Point(141, 624);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(447, 33);
@@ -185,7 +185,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1100, 600);
+            this.ClientSize = new System.Drawing.Size(1306, 717);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.UidTb);

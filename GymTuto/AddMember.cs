@@ -51,7 +51,7 @@ namespace GymTuto
         {
             if (NameTb.Text == "" || PhoneTb.Text == "" || AmountTb.Text == "" || AgeTb.Text == "")
             {
-                MessageBox.Show("MIssing Information");
+                MessageBox.Show("Missing Information");
             }
             else
             {
@@ -107,6 +107,21 @@ namespace GymTuto
         }
 
         private void button3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
         {
 
         }
