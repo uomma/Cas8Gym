@@ -59,5 +59,17 @@ namespace GymTuto
             viewMembers.Show();
             this.Hide();    
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            log.Show();
+            this.Hide();
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

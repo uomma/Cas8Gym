@@ -63,8 +63,8 @@ namespace GymTuto
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Login log = new Login();
-            log.Show();
+          MainForm form = new MainForm();
+            form.Show();
             this.Hide();
         }
 

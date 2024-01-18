@@ -55,5 +55,15 @@ namespace GymTuto
                 MessageBox.Show("Wrong Id or Password ");
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
