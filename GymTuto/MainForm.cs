@@ -41,7 +41,16 @@ namespace GymTuto
 
         private void button2_Click(object sender, EventArgs e)
         {
+            UpdateDelete update = new UpdateDelete();
+            update.Show();
+            this.Hide();
+        }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Payments pay = new Payments();
+            pay.Show();
+            this.Hide();
         }
     }
 }

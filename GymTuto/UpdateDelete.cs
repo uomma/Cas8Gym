@@ -49,7 +49,7 @@ namespace GymTuto
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -64,26 +64,27 @@ namespace GymTuto
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Login log = new Login();
-            log.Show();
+            MainForm mainform = new MainForm();
+            mainform.Show();
             this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (key == 0)
+            if (key == 0 || NameTb.Text == "" || PhoneTb.Text == "" || AgeTb.Text == "" || AmountTb.Text == "" || GenderCb.Text == "" || TimeCb.Text == "")
             {
-                MessageBox.Show("select the member to be deleted");
+                MessageBox.Show("Missing information");
             }
             else
             {
                 try
                 {
                     Con.Open();
-                    string query = "delete from MemberTbl where MId=" + key + "";
+                    string query = "update MemberTbl set MName = '" + NameTb.Text + "', MPhone= '" + PhoneTb.Text + "', MGen = '" + GenderCb.Text + "', MAge= '" + AgeTb.Text + "', MAmount = '" + AmountTb.Text + "', MTime='" + TimeCb.Text + "' where MId="+key+"; ";
+
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("member deleted succsessfully");
+                    MessageBox.Show("member Updated succsessfully");
                     Con.Close();
                     populate();
                 }
@@ -97,6 +98,11 @@ namespace GymTuto
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

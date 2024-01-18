@@ -91,8 +91,8 @@ namespace GymTuto
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Login log = new Login();
-            log.Show();
+            MainForm mainform = new MainForm();
+            mainform.Show();
             this.Hide();
         }
     }
