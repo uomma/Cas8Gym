@@ -19,6 +19,8 @@ namespace GymTuto
         {
             InitializeComponent();
         }
+
+        //CONNECTION WITH DATABASE
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sandra\Documents\GymDb.mdf;Integrated Security=True;Connect Timeout=30");
         private void populate()
         {
@@ -31,10 +33,14 @@ namespace GymTuto
             MemberSDGV.DataSource = ds.Tables[0];
             Con.Close();
         }
+
+        //FUNCTION OF CallToDB INVOKED
         private void UpdateDelete_Load(object sender, EventArgs e)
         {
             populate();
         }
+
+        //MEMBER SDGV
         int key = 0;
         private void MemberSDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -53,7 +59,7 @@ namespace GymTuto
         {
 
         }
-
+        //RESET BUTTON
         private void button3_Click(object sender, EventArgs e)
         {
             AmountTb.Text = "";
@@ -70,12 +76,32 @@ namespace GymTuto
             mainform.Show();
             this.Hide();
         }
-
+        //DELETE BUTTON 
         private void button5_Click(object sender, EventArgs e)
         {
-           
+            if (key == 0)
+            {
+                MessageBox.Show("select the member to delete");
+            }
+            else
+            {
+                try {
+                    Con.Open();
+                    string query = "delete from MemberTbl where Mid='" + key + "'";
+                    SqlCommand cmd= new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Member Successfully Deleted");
+                    Con.Close();
+                    populate();
+                
+                }
+                catch (Exception ex) { 
+                MessageBox.Show(ex.Message);
+                }
+            }
         }
 
+        //UPDATE BUTTON
         private void button2_Click(object sender, EventArgs e)
         {
             if (key == 0 || NameTb.Text == "" || PhoneTb.Text == "" || AgeTb.Text == "" || AmountTb.Text == "" || GenderCb.Text == "" || TimeCb.Text == "")
@@ -101,7 +127,7 @@ namespace GymTuto
                 }
             }
         }
-
+        //X BUTTON
         private void label3_Click(object sender, EventArgs e)
         {
             Application.Exit();
