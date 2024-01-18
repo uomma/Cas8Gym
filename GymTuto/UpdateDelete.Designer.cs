@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateDelete));
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -112,6 +113,9 @@
             // 
             // TimeCb
             // 
+            this.TimeCb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TimeCb.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimeCb.ForeColor = System.Drawing.Color.Black;
             this.TimeCb.FormattingEnabled = true;
             this.TimeCb.Items.AddRange(new object[] {
             "6:00-8:00",
@@ -121,7 +125,7 @@
             this.TimeCb.Location = new System.Drawing.Point(286, 467);
             this.TimeCb.Margin = new System.Windows.Forms.Padding(2);
             this.TimeCb.Name = "TimeCb";
-            this.TimeCb.Size = new System.Drawing.Size(139, 21);
+            this.TimeCb.Size = new System.Drawing.Size(139, 26);
             this.TimeCb.TabIndex = 39;
             // 
             // label9
@@ -152,15 +156,20 @@
             // 
             // AmountTb
             // 
-            this.AmountTb.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.AmountTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AmountTb.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmountTb.ForeColor = System.Drawing.Color.Black;
             this.AmountTb.Location = new System.Drawing.Point(286, 394);
             this.AmountTb.Margin = new System.Windows.Forms.Padding(2);
             this.AmountTb.Name = "AmountTb";
-            this.AmountTb.Size = new System.Drawing.Size(139, 20);
+            this.AmountTb.Size = new System.Drawing.Size(139, 25);
             this.AmountTb.TabIndex = 36;
             // 
             // GenderCb
             // 
+            this.GenderCb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.GenderCb.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GenderCb.ForeColor = System.Drawing.Color.Black;
             this.GenderCb.FormattingEnabled = true;
             this.GenderCb.Items.AddRange(new object[] {
             "Male",
@@ -168,7 +177,7 @@
             this.GenderCb.Location = new System.Drawing.Point(286, 548);
             this.GenderCb.Margin = new System.Windows.Forms.Padding(2);
             this.GenderCb.Name = "GenderCb";
-            this.GenderCb.Size = new System.Drawing.Size(139, 21);
+            this.GenderCb.Size = new System.Drawing.Size(139, 26);
             this.GenderCb.TabIndex = 35;
             this.GenderCb.SelectedIndexChanged += new System.EventHandler(this.GenderCb_SelectedIndexChanged);
             // 
@@ -188,11 +197,13 @@
             // 
             // AgeTb
             // 
-            this.AgeTb.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.AgeTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AgeTb.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgeTb.ForeColor = System.Drawing.Color.Black;
             this.AgeTb.Location = new System.Drawing.Point(286, 311);
             this.AgeTb.Margin = new System.Windows.Forms.Padding(2);
             this.AgeTb.Name = "AgeTb";
-            this.AgeTb.Size = new System.Drawing.Size(139, 20);
+            this.AgeTb.Size = new System.Drawing.Size(139, 25);
             this.AgeTb.TabIndex = 33;
             this.AgeTb.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
@@ -224,11 +235,13 @@
             // 
             // PhoneTb
             // 
-            this.PhoneTb.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.PhoneTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PhoneTb.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneTb.ForeColor = System.Drawing.Color.Black;
             this.PhoneTb.Location = new System.Drawing.Point(286, 227);
             this.PhoneTb.Margin = new System.Windows.Forms.Padding(2);
             this.PhoneTb.Name = "PhoneTb";
-            this.PhoneTb.Size = new System.Drawing.Size(139, 20);
+            this.PhoneTb.Size = new System.Drawing.Size(139, 25);
             this.PhoneTb.TabIndex = 30;
             // 
             // label4
@@ -246,11 +259,13 @@
             // 
             // NameTb
             // 
-            this.NameTb.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.NameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NameTb.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameTb.ForeColor = System.Drawing.Color.Black;
             this.NameTb.Location = new System.Drawing.Point(286, 151);
             this.NameTb.Margin = new System.Windows.Forms.Padding(2);
             this.NameTb.Name = "NameTb";
-            this.NameTb.Size = new System.Drawing.Size(139, 20);
+            this.NameTb.Size = new System.Drawing.Size(139, 25);
             this.NameTb.TabIndex = 28;
             // 
             // button1
@@ -274,6 +289,7 @@
             this.label2.Size = new System.Drawing.Size(415, 33);
             this.label2.TabIndex = 26;
             this.label2.Text = "UPDATE OR DELETE MEMBER";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -303,10 +319,9 @@
             // MemberSDGV
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Empty;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Empty;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Empty;
             this.MemberSDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.MemberSDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.MemberSDGV.BackgroundColor = System.Drawing.Color.White;
@@ -315,13 +330,14 @@
             this.MemberSDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkGoldenrod;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Firebrick;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.MemberSDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.MemberSDGV.ColumnHeadersHeight = 25;
+            this.MemberSDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -335,6 +351,14 @@
             this.MemberSDGV.Location = new System.Drawing.Point(468, 130);
             this.MemberSDGV.Margin = new System.Windows.Forms.Padding(2);
             this.MemberSDGV.Name = "MemberSDGV";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkGoldenrod;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.MemberSDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.MemberSDGV.RowHeadersVisible = false;
             this.MemberSDGV.RowHeadersWidth = 51;
             this.MemberSDGV.RowTemplate.Height = 20;
@@ -353,7 +377,7 @@
             this.MemberSDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.MemberSDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.MemberSDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.MemberSDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.MemberSDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.MemberSDGV.ThemeStyle.HeaderStyle.Height = 25;
             this.MemberSDGV.ThemeStyle.ReadOnly = false;
             this.MemberSDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -406,6 +430,7 @@
             this.label11.Size = new System.Drawing.Size(297, 71);
             this.label11.TabIndex = 51;
             this.label11.Text = "CAS8GYM";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label1
             // 
