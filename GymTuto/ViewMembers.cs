@@ -47,7 +47,14 @@ namespace GymTuto
         }
         private void ViewMembers_Load(object sender, EventArgs e)
         {
-            populate();
+            populate(); 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            log.Show();
+            this.Hide();
         }
     }
 }
