@@ -18,9 +18,20 @@ namespace GymTuto
         {
             InitializeComponent();
         }
-
+        private void filterByName()
+        {
+            Con.Open();
+            string query = "select * from MemberTbl where MName= '" + SearchMember.Text + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder();
+            var ds = new DataSet();
+            sda.Fill(ds);
+            MemberSDGV.DataSource = ds.Tables[0];
+            Con.Close();
+        }
         private void button3_Click(object sender, EventArgs e)
         {
+            filterByName();
 
         }
 
@@ -55,6 +66,11 @@ namespace GymTuto
             Login log = new Login();
             log.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            populate();
         }
     }
 }

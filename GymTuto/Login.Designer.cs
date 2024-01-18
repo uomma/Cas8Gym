@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.UidTb = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.PwTb = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
@@ -68,15 +68,16 @@
             this.label1.Text = "CAS8GYM";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // UidTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Sans Serif Collection", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Yellow;
-            this.textBox1.Location = new System.Drawing.Point(494, 134);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(266, 72);
-            this.textBox1.TabIndex = 2;
+            this.UidTb.Font = new System.Drawing.Font("Sans Serif Collection", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UidTb.ForeColor = System.Drawing.Color.Yellow;
+            this.UidTb.Location = new System.Drawing.Point(494, 134);
+            this.UidTb.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.UidTb.Name = "UidTb";
+            this.UidTb.Size = new System.Drawing.Size(266, 72);
+            this.UidTb.TabIndex = 2;
+            this.UidTb.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pictureBox1
             // 
@@ -100,15 +101,16 @@
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
-            // textBox2
+            // PwTb
             // 
-            this.textBox2.Font = new System.Drawing.Font("Sans Serif Collection", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Yellow;
-            this.textBox2.Location = new System.Drawing.Point(494, 239);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(266, 72);
-            this.textBox2.TabIndex = 4;
+            this.PwTb.Font = new System.Drawing.Font("Sans Serif Collection", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PwTb.ForeColor = System.Drawing.Color.Yellow;
+            this.PwTb.Location = new System.Drawing.Point(494, 239);
+            this.PwTb.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.PwTb.Name = "PwTb";
+            this.PwTb.PasswordChar = '*';
+            this.PwTb.Size = new System.Drawing.Size(266, 72);
+            this.PwTb.TabIndex = 4;
             // 
             // button1
             // 
@@ -140,6 +142,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "LOGIN";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Login
             // 
@@ -150,9 +153,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.PwTb);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.UidTb);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gunaCirclePictureBox1);
             this.Font = new System.Drawing.Font("Sans Serif Collection", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -175,10 +178,10 @@
 
         private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox UidTb;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox PwTb;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }

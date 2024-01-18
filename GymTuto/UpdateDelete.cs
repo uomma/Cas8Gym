@@ -39,10 +39,10 @@ namespace GymTuto
             key = Convert.ToInt32(MemberSDGV.SelectedRows[0].Cells[0].Value.ToString());
             NameTb.Text = MemberSDGV.SelectedRows[0].Cells[1].Value.ToString();
             PhoneTb.Text = MemberSDGV.SelectedRows[0].Cells[2].Value.ToString();
-            AgeTb.Text = MemberSDGV.SelectedRows[0].Cells[3].Value.ToString();
-            AmountTb.Text = MemberSDGV.SelectedRows[0].Cells[4].Value.ToString();
+            AgeTb.Text = MemberSDGV.SelectedRows[0].Cells[4].Value.ToString();
+            AmountTb.Text = MemberSDGV.SelectedRows[0].Cells[6].Value.ToString();
             TimeCb.Text = MemberSDGV.SelectedRows[0].Cells[5].Value.ToString();
-            GenderCb.Text = MemberSDGV.SelectedRows[0].Cells[6].Value.ToString();
+            GenderCb.Text = MemberSDGV.SelectedRows[0].Cells[3].Value.ToString();
 
 
         }
@@ -80,7 +80,7 @@ namespace GymTuto
                 try
                 {
                     Con.Open();
-                    string query = "update MemberTbl set MName = '" + NameTb.Text + "', MPhone= '" + PhoneTb.Text + "', MGen = '" + GenderCb.Text + "', MAge= '" + AgeTb.Text + "', MAmount = '" + AmountTb.Text + "', MTime='" + TimeCb.Text + "' where MId="+key+"; ";
+                    string query = "update MemberTbl set MName = '" + NameTb.Text + "', MPhone= '" + PhoneTb.Text + "',MAge= '" + AgeTb.Text + "', MGen = '" + GenderCb.Text + "',  MAmount = '" + AmountTb.Text + "', MTime='" + TimeCb.Text + "' where MId="+key+"; ";
 
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
@@ -103,6 +103,11 @@ namespace GymTuto
         private void label3_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void GenderCb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
