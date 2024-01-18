@@ -147,5 +147,10 @@ namespace GymTuto
         {
 
         }
+
+        private void label7_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

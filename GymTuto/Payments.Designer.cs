@@ -48,14 +48,14 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.MemberSDGV = new Guna.UI.WinForms.GunaDataGridView();
+            this.PaymentSDGV = new Guna.UI.WinForms.GunaDataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MemberSDGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PaymentSDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // Periodo
@@ -215,6 +215,7 @@
             this.label7.Size = new System.Drawing.Size(75, 83);
             this.label7.TabIndex = 53;
             this.label7.Text = "X";
+            this.label7.Click += new System.EventHandler(this.label7_Click_1);
             // 
             // label8
             // 
@@ -222,12 +223,12 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Stencil", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(494, 32);
+            this.label8.Location = new System.Drawing.Point(588, 29);
             this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(415, 33);
+            this.label8.Size = new System.Drawing.Size(165, 33);
             this.label8.TabIndex = 52;
-            this.label8.Text = "UPDATE OR DELETE MEMBER";
+            this.label8.Text = "PAYMENTS";
             // 
             // label1
             // 
@@ -255,15 +256,15 @@
             this.label10.TabIndex = 69;
             this.label10.Text = "Developed by Marcello Leone";
             // 
-            // MemberSDGV
+            // PaymentSDGV
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.MemberSDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.MemberSDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.MemberSDGV.BackgroundColor = System.Drawing.Color.White;
-            this.MemberSDGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.MemberSDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.MemberSDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.PaymentSDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.PaymentSDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.PaymentSDGV.BackgroundColor = System.Drawing.Color.White;
+            this.PaymentSDGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.PaymentSDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.PaymentSDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.Tan;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -271,9 +272,9 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Firebrick;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.MemberSDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.MemberSDGV.ColumnHeadersHeight = 25;
-            this.MemberSDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.PaymentSDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.PaymentSDGV.ColumnHeadersHeight = 25;
+            this.PaymentSDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -281,12 +282,12 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Orange;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.MemberSDGV.DefaultCellStyle = dataGridViewCellStyle3;
-            this.MemberSDGV.EnableHeadersVisualStyles = false;
-            this.MemberSDGV.GridColor = System.Drawing.Color.Firebrick;
-            this.MemberSDGV.Location = new System.Drawing.Point(482, 197);
-            this.MemberSDGV.Margin = new System.Windows.Forms.Padding(2);
-            this.MemberSDGV.Name = "MemberSDGV";
+            this.PaymentSDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            this.PaymentSDGV.EnableHeadersVisualStyles = false;
+            this.PaymentSDGV.GridColor = System.Drawing.Color.Firebrick;
+            this.PaymentSDGV.Location = new System.Drawing.Point(482, 197);
+            this.PaymentSDGV.Margin = new System.Windows.Forms.Padding(2);
+            this.PaymentSDGV.Name = "PaymentSDGV";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -294,35 +295,35 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkGoldenrod;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.MemberSDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.MemberSDGV.RowHeadersVisible = false;
-            this.MemberSDGV.RowHeadersWidth = 51;
-            this.MemberSDGV.RowTemplate.Height = 20;
-            this.MemberSDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.MemberSDGV.Size = new System.Drawing.Size(812, 449);
-            this.MemberSDGV.TabIndex = 68;
-            this.MemberSDGV.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.MemberSDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.MemberSDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.MemberSDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.MemberSDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.MemberSDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.MemberSDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.MemberSDGV.ThemeStyle.GridColor = System.Drawing.Color.Firebrick;
-            this.MemberSDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Tan;
-            this.MemberSDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.MemberSDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.MemberSDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.MemberSDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.MemberSDGV.ThemeStyle.HeaderStyle.Height = 25;
-            this.MemberSDGV.ThemeStyle.ReadOnly = false;
-            this.MemberSDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.MemberSDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.MemberSDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MemberSDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.MemberSDGV.ThemeStyle.RowsStyle.Height = 20;
-            this.MemberSDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.Orange;
-            this.MemberSDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.PaymentSDGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.PaymentSDGV.RowHeadersVisible = false;
+            this.PaymentSDGV.RowHeadersWidth = 51;
+            this.PaymentSDGV.RowTemplate.Height = 20;
+            this.PaymentSDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.PaymentSDGV.Size = new System.Drawing.Size(812, 449);
+            this.PaymentSDGV.TabIndex = 68;
+            this.PaymentSDGV.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.PaymentSDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.PaymentSDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.PaymentSDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.PaymentSDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.PaymentSDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.PaymentSDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.PaymentSDGV.ThemeStyle.GridColor = System.Drawing.Color.Firebrick;
+            this.PaymentSDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Tan;
+            this.PaymentSDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.PaymentSDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.PaymentSDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.PaymentSDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.PaymentSDGV.ThemeStyle.HeaderStyle.Height = 25;
+            this.PaymentSDGV.ThemeStyle.ReadOnly = false;
+            this.PaymentSDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.PaymentSDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.PaymentSDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PaymentSDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.PaymentSDGV.ThemeStyle.RowsStyle.Height = 20;
+            this.PaymentSDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.Orange;
+            this.PaymentSDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
             // label2
             // 
@@ -403,7 +404,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.MemberSDGV);
+            this.Controls.Add(this.PaymentSDGV);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button2);
@@ -422,7 +423,7 @@
             this.Load += new System.EventHandler(this.Payments_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MemberSDGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PaymentSDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -444,7 +445,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
-        private Guna.UI.WinForms.GunaDataGridView MemberSDGV;
+        private Guna.UI.WinForms.GunaDataGridView PaymentSDGV;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label9;

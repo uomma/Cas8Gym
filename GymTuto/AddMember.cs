@@ -49,6 +49,53 @@ namespace GymTuto
 
         private void button2_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+        //RESET BUTTON
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            AmountTb.Text = "";
+            AgeTb.Text = "";
+            NameTb.Text = "";
+            PhoneTb.Text = "";
+            GenderCb.Text = "";
+            TimeCb.Text = "";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+        //BACK BUTTON
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            MainForm mainform = new MainForm();
+            mainform.Show();
+            this.Hide();
+        }
+        //ADD MEMBER
+        private void button2_Click_1(object sender, EventArgs e)
+        {
             if (NameTb.Text == "" || PhoneTb.Text == "" || AmountTb.Text == "" || AgeTb.Text == "")
             {
                 MessageBox.Show("Missing Information");
@@ -71,7 +118,7 @@ namespace GymTuto
                     TimeCb.Text = "";
 
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
@@ -79,49 +126,17 @@ namespace GymTuto
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void label10_Click_1(object sender, EventArgs e)
         {
-            AmountTb.Text = "";
-            AgeTb.Text = "";
-            NameTb.Text = "";
-            PhoneTb.Text = "";
-            GenderCb.Text = "";
-            TimeCb.Text = "";
+            Application.Exit();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            MainForm mainform = new MainForm();
-            mainform.Show();
-            this.Hide();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void label11_Click_1(object sender, EventArgs e)
         {
 
         }
 
-        private void label3_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
+        private void label14_Click(object sender, EventArgs e)
         {
 
         }
