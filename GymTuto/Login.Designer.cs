@@ -61,7 +61,7 @@
             this.UidTb.Font = new System.Drawing.Font("Sans Serif Collection", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UidTb.ForeColor = System.Drawing.Color.Firebrick;
             this.UidTb.Location = new System.Drawing.Point(567, 126);
-            this.UidTb.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.UidTb.Margin = new System.Windows.Forms.Padding(0);
             this.UidTb.Name = "UidTb";
             this.UidTb.Size = new System.Drawing.Size(319, 74);
             this.UidTb.TabIndex = 2;
@@ -74,8 +74,8 @@
             this.pictureBox1.Location = new System.Drawing.Point(879, 126);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(57, 74);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.Size = new System.Drawing.Size(57, 58);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -98,7 +98,7 @@
             this.PwTb.Font = new System.Drawing.Font("Sans Serif Collection", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PwTb.ForeColor = System.Drawing.Color.Firebrick;
             this.PwTb.Location = new System.Drawing.Point(567, 234);
-            this.PwTb.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.PwTb.Margin = new System.Windows.Forms.Padding(0);
             this.PwTb.Name = "PwTb";
             this.PwTb.PasswordChar = '*';
             this.PwTb.Size = new System.Drawing.Size(319, 74);
@@ -107,6 +107,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Firebrick;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Bold);
@@ -123,6 +124,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Firebrick;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Stencil", 20.25F, System.Drawing.FontStyle.Bold);
